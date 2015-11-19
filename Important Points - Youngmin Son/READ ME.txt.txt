@@ -1,0 +1,6 @@
+This software will read in a text file that contains coordinates
+
+and will draw a shape based on those coordinates.
+
+Then, you can manipulate the shape by entering a number betweeen 0 and 50.
+
