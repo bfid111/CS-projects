@@ -43,11 +43,9 @@ public class Driver {
              { 
                  File file = new File(oFileName + extension); // file name format ex) salad + extension 
               //  BufferedWriter out = new BufferedWriter(new FileWriter(oFileName + ".doc")); 
-                 
                  if (!file.exists()) { // if there is no file with the same name in the directory 
 				file.createNewFile();      
 			}
-
                  FileWriter fstream = new FileWriter(file.getAbsoluteFile()); // create file
                  BufferedWriter out = new BufferedWriter(fstream);
              //   DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
@@ -64,19 +62,10 @@ public class Driver {
           else  // if the user does not select a category. you cannot save since you dont know what kind of food it is therefore, sends error mesage
           {
               JOptionPane.showMessageDialog(null, "Please Select a Category"); 
-              Success = false; // returns failed to save sign 
-              
+              Success = false; // returns failed to save sign     
           }
-                 return Success;
-                
+                 return Success;        
              }
-     
-     
-     
-
-     
-    
-
      public static String returnText()
      {
          String recipe = Book.jTextArea1.getText(); // return the text that is in the jTextarea 
@@ -86,7 +75,6 @@ public class Driver {
      {
          String fileName = Book.jTextField1.getText(); // get the file name from the text field box 
          return fileName;
-         
      }
  //    public void ListFiles()
   //   {
@@ -110,18 +98,13 @@ public class Driver {
              {
                  files=list[a].getName();
                  listmodel.addElement(list[a].getName());
-                // System.out.println(files);
-                 
-                 
-                 }
-                 
-                       
+                // System.out.println(files);        
+                 }        
             //     listmodel.addElement(list[a]);
                //  JList list1 = new JList(listmodel);
               //   b.jScrollPane3.add(list1);
              }
          }
-         
        public String ReadFile(String oFileName, String a) 
      {
          String data = ""; 
@@ -131,28 +114,20 @@ public class Driver {
              String line = null;
              while ((line = in.readLine()) != null)  // read text from file 
              {
-                data += line;
-                 
+                data += line;     
              }
              in.close(); 
-            
-                
-             
-             
-               
+
              } catch (IOException e) {} 
             a = data;
              return a; // return the text 
      }
     public static DefaultListModel listmodel1 = new DefaultListModel();
     String aa = new String();
-  
     // Button Selection 
     Book c = new Book();
-    
      public static String files;
           
-     
     public static void LoadList()
 {
         // String location = "C:\\Users\\Youngmin\\Documents\\NetBeansProjects\\CookBook";
@@ -161,32 +136,21 @@ public class Driver {
          {
              // if any of the categories is clicked
          listmodel1.clear(); // first clears the list to loda the list
-         File folder = new File("."); // set the directory to where the JAR file is located 
-        
+         File folder = new File("."); // set the directory to where the JAR file is located  
          File[] list = folder.listFiles(); // FIle array list 
-         
-        
-         
-          
          for(int a =0; a < list.length; a++) // scans all the files in the folder or directory 
          {
              if(list[a].isFile() && list[a].getName().contains(extension)) // if it is a file and has the extension name
              {
                 files =list[a].getName(); // path 
-                listmodel1.addElement(list[a].getName()); // adds the name to the Jlist1 
-               
+                listmodel1.addElement(list[a].getName()); // adds the name to the Jlist1  
                 // System.out.println(files);
-                 
-                 
-                 }
-                 
-                       
+                 }    
             //     listmodel.addElement(list[a]);
                //  JList list1 = new JList(listmodel);
               //   b.jScrollPane3.add(list1);
              }
-         }
-          
+         }   
 }    
     public static void ClearList()
     {
@@ -197,8 +161,7 @@ public class Driver {
     public static void RefreshList() // experiment purpose method, is not used in the acutal program
     {
         listmodel1.clear();
-        
-        
+
         /*
         File folder = new File(files);
          File[] list = folder.listFiles();
@@ -212,11 +175,9 @@ public class Driver {
                 listmodel1.addElement(list[a].getName());
                
                 // System.out.println(files);
-                 
-                 
+
                  }
-                 
-                       
+ 
             //     listmodel.addElement(list[a]);
                //  JList list1 = new JList(listmodel);
               //   b.jScrollPane3.add(list1);
@@ -243,29 +204,20 @@ public class Driver {
      String data = "";
          try
          {
-              
              BufferedReader in = new BufferedReader( new FileReader(Book.jList2.getSelectedValue().toString())); // selected recipe  name -> string 
              String line = null;
              while ((line = in.readLine()) != null)  // read text from file 
              {
-                data += line+"\n";
-                 
+                data += line+"\n";   
              }
-             in.close(); 
-            
-              
-             
-             
-               
+             in.close();   
              } catch (IOException e) {} 
             
              System.out.println(data);
              Book.jTextArea1.setText(""); // clears the text area
              Book.jTextArea1.append(data); // add the recipe to text area
     }
-        
-         
-      
+
 }
    
 
