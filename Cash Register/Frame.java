@@ -61,12 +61,7 @@ public class Frame extends javax.swing.JFrame
         jButton26.addActionListener(a);
         jButton25.addActionListener(a);
         jPanel1.setFocusable(true); // set focus on panel 
-        
     }
-
-      
-                
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
