@@ -76,8 +76,6 @@ public class DrawShape extends JFrame {
                 panel.setVisible(true);
                 Driver.CreateList();   
                 drawing.setBackground(Color.BLACK);
-          
-                
                   }
 	/*
 	 * constructor
@@ -96,44 +94,40 @@ public class DrawShape extends JFrame {
         @Override
 	public void paint(Graphics g) 
 	{
-                                     count  =0 ;
-                                     getContentPane().setBackground(Color.BLACK);
-                                     g.setColor(Color.WHITE);
-                                     g.clearRect(0, 0, getWidth(), getHeight()); // clear screen 
-                                     g.setColor(Color.WHITE);  
-                                       Driver.Temp = Driver.first;
-                                       Node first = Driver.Temp; // store first Node 
-                                       aloop: // loop 
-                                  if(Driver.linkObject.size() > 0)
-                                  {
-                                          try { 
-                                               for (int a = 1; a < Driver.linkObject.size()-1; a++)
-                                        {
-                                            // plot lines 
-                                            g.drawLine(Driver.linkObject.get(a).x,  Driver.linkObject.get(a).y
-                                                    , Driver.linkObject.get(a+1).x,  Driver.linkObject.get(a+1).y);
-                                            count++;
-                                            System.out.println("Count # : " + count + " Point Plotted at : "  + Driver.linkObject.get(a).getClass() + "," + Driver.linkObject.get(a).toString());
-                                             sleep(80);
-                                        }
-                                           g.drawLine(Driver.linkObject.get(Driver.linkObject.size()-1).x, Driver.linkObject.get(Driver.linkObject.size()-1).y,
-                                                  Driver.linkObject.get(1).x, Driver.linkObject.get(1).y); // connects firs point and the last point
-                                          } catch (InterruptedException ex) {
-                                              Logger.getLogger(DrawShape.class.getName()).log(Level.SEVERE, null, ex);
-                                          }
-                                          // connects the last point to the first point 
-                                    //      g.drawLine(Driver.linkObject.get(Driver.linkObject.size()).x, Driver.linkObject.get(Driver.linkObject.size()).y
-                                             //     , Driver.linkObject.get(1).x, Driver.linkObject.get(1).y);      
-                                        
-                                                break aloop; // get out of loop after plotting final point
-                                                // if there is no break ; makes program to freeze //
-                                                // TODO: Handle loop 
-                                                // TODO: Clear JPanel when loading a new Picture 
-                                            }
-                                       
-                                       
-                                       
-                                      }
-                                     }
+		count  =0 ;
+		getContentPane().setBackground(Color.BLACK);
+        g.setColor(Color.WHITE);
+		g.clearRect(0, 0, getWidth(), getHeight()); // clear screen 
+        g.setColor(Color.WHITE);  
+        Driver.Temp = Driver.first;
+        Node first = Driver.Temp; // store first Node 
+        aloop: // loop 
+        if(Driver.linkObject.size() > 0)
+        {
+            try { 
+                 for (int a = 1; a < Driver.linkObject.size()-1; a++)
+                 {
+                  // plot lines 
+                  g.drawLine(Driver.linkObject.get(a).x,  Driver.linkObject.get(a).y
+                  , Driver.linkObject.get(a+1).x,  Driver.linkObject.get(a+1).y);
+                  count++;
+                  System.out.println("Count # : " + count + " Point Plotted at : "  + Driver.linkObject.get(a).getClass() + "," + Driver.linkObject.get(a).toString());
+                  sleep(80);
+                  }
+                  g.drawLine(Driver.linkObject.get(Driver.linkObject.size()-1).x, Driver.linkObject.get(Driver.linkObject.size()-1).y,
+                  Driver.linkObject.get(1).x, Driver.linkObject.get(1).y); // connects firs point and the last point
+                  } catch (InterruptedException ex) {
+                  Logger.getLogger(DrawShape.class.getName()).log(Level.SEVERE, null, ex);
+                  }
+                  // connects the last point to the first point 
+                  //g.drawLine(Driver.linkObject.get(Driver.linkObject.size()).x, Driver.linkObject.get(Driver.linkObject.size()).y
+                  //, Driver.linkObject.get(1).x, Driver.linkObject.get(1).y);      
+                  break aloop; // get out of loop after plotting final point
+                  // if there is no break ; makes program to freeze //
+                  // TODO: Handle loop 
+                  // TODO: Clear JPanel when loading a new Picture 
+		}
+	}
+}
 
 
