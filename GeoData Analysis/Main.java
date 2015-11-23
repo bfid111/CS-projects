@@ -41,13 +41,7 @@ try {
     System.out.println( "Done sorting the list. Sorting " + bigList.size() + " took: " + TimeUnit.MILLISECONDS.convert( elapsed , TimeUnit.NANOSECONDS ) + " ms ( " + elapsed + " nanos )." );
 
     System.out.println( "Dump…" );
-    /*
-    for ( GeoReading g : bigList ) {
-        int a =0;
-        a = a+1;
-        System.out.println(  " : " +  g );
-    }
-            */
+
     for(int b =0; b < bigList.size();b++)
     {
         System.out.println(b +  " : " +  bigList.get(b) );
