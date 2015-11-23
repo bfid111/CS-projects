@@ -126,8 +126,6 @@ public class TrollButton extends javax.swing.JFrame {
     }
       public static void MoveButton ()
     {
-     
-        
         int x = (int) (Math.random()*470 ); // random x axis coordinate
         int y = (int) (Math.random()*470 );// random y  axis coordinate
         
@@ -139,9 +137,7 @@ public class TrollButton extends javax.swing.JFrame {
         {
             jButton1.setLocation(x - (int) (Math.random()*100+1),y-(int) (Math.random()*100+1)); // moves to random location that is less than 100 pixels away 
         }
-       
-     
-        
+
     }
   
       
