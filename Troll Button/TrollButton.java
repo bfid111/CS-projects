@@ -14,14 +14,12 @@ import javax.swing.JOptionPane;
  * @author Youngmin
  */
 public class TrollButton extends javax.swing.JFrame {
-
     /**
      * Creates new form TrollButton
      */
-     int count;
+    int count;
     public TrollButton() {
         initComponents();
-       
     }
 
     /**
@@ -139,9 +137,6 @@ public class TrollButton extends javax.swing.JFrame {
         }
 
     }
-  
-      
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private static javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
