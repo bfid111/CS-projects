@@ -1,3 +1,8 @@
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -43,7 +48,7 @@ class Maze {
   {'#','.','.','.','.','.','.','.','#','.','.','#'},
   {'#','#','#','#','#','#','#','#','#','#','#','#'}
   }; // maze #1
-
+ static File file = new File("maze result.txt");
 
  static int finalx; // exit coodrinate  variable
  static int finaly;// exit coodrinate  variable
@@ -54,8 +59,9 @@ class Maze {
   * PreCondition - The X and Y Coordinates has to be passed 
   * Post Condition - Leaves a trace on the maze with X and O on the EXIT
   * @return boolean
+ * @throws IOException 
   */
- public static boolean traverseTheMaze(int x,int y) {
+ public static boolean traverseTheMaze(int x,int y) throws IOException {
   System.out.println("Current Status of Maze "); 
   printMaze(); // print maze 
   if(x == finalx && y == finaly)// if reaches the exit
@@ -93,16 +99,21 @@ class Maze {
   * Prints The Maze 
   * Precondition - None
   * PostCondition - Prints the Maze to the Screen 
+ * @throws IOException 
   */
- public static void printMaze() {
+ public static void printMaze() throws IOException {
+	 FileWriter fstream = new FileWriter(file.getAbsoluteFile()); // create file
+	 BufferedWriter out = new BufferedWriter(fstream);
      for(int i = 0; i < maze.length; i++)
   {
    for (int j = 0; j < maze.length; j++)
    {
     System.out.print(maze[i][j] + " "); // print maze 
+    out.write(maze[i][j] + " ");
    }
     System.out.println();
   }
+     out.close();
  }
 
  

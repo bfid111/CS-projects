@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
@@ -18,6 +19,7 @@ public class Main {
     static long msB;
     static long nsA;
     static long nsB;
+    
     static Scanner sc = new Scanner(System.in);
     /**
      * Prompts the User to Select a Maze to Solve
@@ -27,6 +29,7 @@ public class Main {
      * @throws IOException 
      */
     public static void main(String [] Args) throws IOException {
+    
     System.out.println("WELCOME TO MAZE SOLVER");
     System.out.println("MAZE#1");
     Maze.maze = Maze.maze1;
@@ -41,7 +44,6 @@ public class Main {
     System.out.println();
     if(sel == 1) // if user enters 1
     {
-     
         System.out.println("MAZE#1 WAS SELECTED");
         Maze.maze = Maze.maze1;
         Maze.finalx = 9; // coordinate of exit  of the maze
@@ -52,7 +54,6 @@ public class Main {
     }
     else  // if user enters 2
     {
-       
         System.out.println("MAZE#2 WAS SELECTED");
         Maze.maze = Maze.maze2;
         Maze.finalx = 4; // coordinate of exit of the maze
@@ -61,15 +62,12 @@ public class Main {
         Maze.traverseTheMaze(2,0); // starting coordinate
         msB = System.currentTimeMillis() - msA;
     }
-    
     System.out.println();
     System.out.println("______________________________________________________________");
     System.out.println("Maze Solved!");
     Maze.printMaze();
     System.out.println("______________________________________________________________");
     System.out.println("TIME TOOK : " + msB + " ms");
-    
- 
  }
     
 }
