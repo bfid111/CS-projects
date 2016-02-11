@@ -1,8 +1,5 @@
-package nightskyline;
-
 
 import javax.swing.JFrame; //import frame
-
 public class SkylineYoungminSon
 {
    //-----------------------------------------------------------------

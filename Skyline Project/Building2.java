@@ -1,7 +1,3 @@
-package nightskyline;
-
-
-
 
 import java.util.Random; //imports Random util
 public class Building2 {
@@ -10,7 +6,6 @@ public Building2 ()
 {
 number = 1; //instantiates number with value of 1
 }
-
 
 public int a () //new method with number gen from 38 to 87
 {

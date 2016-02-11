@@ -1,6 +1,3 @@
-package nightskyline;
-
-
 
 import javax.swing.JPanel; //import classes
 import java.awt.*;
