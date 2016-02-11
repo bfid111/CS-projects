@@ -20,8 +20,7 @@ public class Main
             result = evaluator.evaluate (expression);
             System.out.println();
             System.out.println ("Result: " + result);
-            System.out.println();
-            
+            System.out.println(); 
    }
 }
    

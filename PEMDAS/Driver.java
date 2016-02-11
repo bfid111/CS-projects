@@ -6,16 +6,12 @@ import java.util.StringTokenizer;
 public class Driver {
     private static final char add = '+',  sub = '-';
     private static final char mult = '*', div= '/';
-
     private Stack stack;
 
     public Driver() {
         stack = new Stack();
     }
-
     public int evaluate(String expr) {
-   
-
         stack = new Stack();
         int pop1,pop2;
         int result = 0;
@@ -37,8 +33,6 @@ public class Driver {
         result = ((Integer) stack.pop());
         return result;
     }
-
-
     private boolean isOperator(String token) {
         return (
             token.equals("+")
@@ -46,7 +40,6 @@ public class Driver {
                 || token.equals("*")
                 || token.equals("/"));
     }
-
     private int operators(char operation, int op1, int op2) {
         int result = 0;
 
@@ -63,7 +56,6 @@ public class Driver {
             case div :
                 result = op1 / op2;
         }
-
         return result;
     }
 }
