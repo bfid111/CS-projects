@@ -118,7 +118,6 @@ public class Frame extends javax.swing.JFrame
                 jPanel1KeyTyped(evt);
             }
         });
-
         jButton12.setBackground(new java.awt.Color(0, 0, 0));
         jButton12.setForeground(new java.awt.Color(51, 255, 51));
         jButton12.setText("FRIES($1.50)");

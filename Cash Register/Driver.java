@@ -2,13 +2,11 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author 15yson
@@ -20,7 +18,6 @@ public class Driver implements ActionListener
     /**
      * Action Listener for objects on JFrame 
      */
-    
      public  void actionPerformed(ActionEvent e) {
          int check = 0;
         {
@@ -246,10 +243,7 @@ public class Driver implements ActionListener
                  Frame.jTextArea1.append("\n"+ "-------------------------------------------------" + "\n" + "Total Price : $ " + Frame.total + "\n");
                  Frame.jTextArea1.append("\n"+ "ENTER AMOUNT OF MONEY TENDERED : (USING KEYBOARD " + "\n");
              }
-        }
-     
-      
-        
+        } 
      /**
      * Clears the value of all variables 
      */
