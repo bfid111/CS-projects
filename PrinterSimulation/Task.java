@@ -3,7 +3,6 @@
 //
 //  Represents a task.
 //********************************************************************
-
 public class Task implements Comparable
 {
    private String name;
