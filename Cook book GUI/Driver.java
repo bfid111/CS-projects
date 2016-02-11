@@ -1,12 +1,5 @@
-/*
-* OH MY FREAKING GOD
- * GUI IS SOOOOO FReAKING AWESSSSOOME
- * HAVE  A GREAT SUMMER MR STEINBERG
- */
-
 package cookbook;
 import cookbook.Book;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -28,13 +21,8 @@ import javax.swing.JOptionPane;
  * @author Youngmin
  */
 public class Driver {
-    
-    
-    
      Path filepath = Paths.get(files);
      public static String extension = "";
-     
-     
      public static Boolean writeFile(String oFileName, String data,Boolean Success) 
      {     
           if(Book.jRadioButton1.isSelected() ||Book.jRadioButton2.isSelected() || Book.jRadioButton3.isSelected() || Book.jRadioButton4.isSelected() || Book.jRadioButton5.isSelected() || Book.jRadioButton6.isSelected() || Book.jRadioButton7.isSelected() || Book.jRadioButton8.isSelected() || Book.jRadioButton9.isSelected() || Book.jRadioButton10.isSelected() )
@@ -126,7 +114,7 @@ public class Driver {
     String aa = new String();
     // Button Selection 
     Book c = new Book();
-     public static String files;
+    public static String files;
           
     public static void LoadList()
 {
@@ -146,9 +134,6 @@ public class Driver {
                 listmodel1.addElement(list[a].getName()); // adds the name to the Jlist1  
                 // System.out.println(files);
                  }    
-            //     listmodel.addElement(list[a]);
-               //  JList list1 = new JList(listmodel);
-              //   b.jScrollPane3.add(list1);
              }
          }   
 }    
@@ -162,45 +147,9 @@ public class Driver {
     {
         listmodel1.clear();
 
-        /*
-        File folder = new File(files);
-         File[] list = folder.listFiles();
-        
-        Book.buttonGroup1.clearSelection();
-         for(int a =0; a < list.length; a++)
-         {
-             if(list[a].isFile())
-             {
-                files =list[a].getName();
-                listmodel1.addElement(list[a].getName());
-               
-                // System.out.println(files);
-
-                 }
- 
-            //     listmodel.addElement(list[a]);
-               //  JList list1 = new JList(listmodel);
-              //   b.jScrollPane3.add(list1);
-             }
-    }*/
     }
     public static void LoadFile() throws IOException 
     {
-        /*
-         Object selection = Book.jList2.getSelectedIndex();
-         String filename = Book.jList2.getSelectedValue().toString();
-          File file = new File(files+filename);
-          FileReader fstream = new FileReader(file.getAbsoluteFile());
-          BufferedReader in = new BufferedReader(fstream);
-          String content = null;
-          String data = "";
-           while ((content = in.readLine()) != null)  // read text from file 
-             {
-                data += content;
-                 
-             }
-           System.out.println(data);
-                */
      String data = "";
          try
          {

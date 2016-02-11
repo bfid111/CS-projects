@@ -1,10 +1,3 @@
-/*
- * OH MY FREAKING GOD
- * GUI IS SOOOOO FReAKING AWESSSSOOME
- * HAVE  A GREAT SUMMER MR STEINBERG
-    
- */
-
 package cookbook;
 
 
@@ -333,7 +326,6 @@ public class Book extends javax.swing.JFrame {
           
           Boolean Success = null;
           Success = Driver.writeFile(returnFileName(),returnText(), Success);
-          
           if (Success == true) // if succeees in saveing file
           {
               JOptionPane.showMessageDialog(null, "[Notice] " +"File was saved Successfully");
@@ -445,37 +437,7 @@ public class Book extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
       JOptionPane.showMessageDialog(null, " Made By Youngmin Son  \n Auto Recipe Loading Method help from Tobias Baumgartner \n Used NetBeans IDE 7.0 \n Have A Great Summer Mr Steinberg \n See You Next Year in AP! ");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-     
- 
-      
-
-       
-                       
-            //     listmodel.addElement(list[a]);
-               //  JList list1 = new JList(listmodel);
-              //   b.jScrollPane3.add(list1);
-             
-
- /*   private void groupButton()
-    {
-        ButtonGroup a1 = new ButtonGroup();
-        a1.add(jRadioButton1);
-        a1.add(jRadioButton2);
-        a1.add(jRadioButton3);
-        a1.add(jRadioButton4);
-        a1.add(jRadioButton5);
-        a1.add(jRadioButton6);
-        a1.add(jRadioButton7);
-        a1.add(jRadioButton8);
-        a1.add(jRadioButton9);
-        a1.add(jRadioButton10);
-        a1.add( radio_button_name );
-               
-    }
-    */
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -504,7 +466,7 @@ public class Book extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Book().setVisible(true);
-             
+          
             }
         });
     }
