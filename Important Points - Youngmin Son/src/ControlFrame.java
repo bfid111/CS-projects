@@ -153,9 +153,7 @@ public class ControlFrame extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+   // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     public static javax.swing.JList jList1;
     private javax.swing.JScrollPane jScrollPane1;

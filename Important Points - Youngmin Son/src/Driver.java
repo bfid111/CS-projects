@@ -20,7 +20,6 @@ import javax.swing.JFrame;
  */
 public class Driver extends DrawShape
 {
-      
          static ArrayList<Point> pointList = new ArrayList<>();
          private static Node nodeList = new Node();
          static Node first;
@@ -44,7 +43,6 @@ public class Driver extends DrawShape
            }
            
          }
-   
                 /**
                  * 
                 Loads the file and then stores the points to pointList Point Array.List Uses BufferedReader  and File Reader for reading files 

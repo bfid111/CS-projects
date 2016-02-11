@@ -61,22 +61,21 @@ import javax.swing.JPanel;
 public class DrawShape extends JFrame {
 	public static int WIDTH = 800;
 	public static int HEIGHT = 800;
-                    static DrawShape drawing = new DrawShape(); // new DrawShape 
-                    //   static Graphics g;
-                     static ControlFrame panel = new ControlFrame(); // new JPanel  (ContrlFrame) 
-                     static Driver driver  = new Driver(); // driver object 
-                     static int count;
-                   
+    static DrawShape drawing = new DrawShape(); // new DrawShape 
+    //   static Graphics g;
+    static ControlFrame panel = new ControlFrame(); // new JPanel  (ContrlFrame) 
+    static Driver driver  = new Driver(); // driver object 
+    static int count;
 	/*
 	 * main method - creates JFrame
 	 */
-                 public static void main(String[] args) {
-                // panel settings 
-                drawing.setVisible(true);
-                panel.setVisible(true);
-                Driver.CreateList();   
-                drawing.setBackground(Color.BLACK);
-                  }
+    public static void main(String[] args) {
+    // panel settings 
+    drawing.setVisible(true);
+    panel.setVisible(true);
+    Driver.CreateList();   
+    drawing.setBackground(Color.BLACK);
+    }
 	/*
 	 * constructor
 	 */
