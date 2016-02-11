@@ -40,7 +40,7 @@ try {
     long elapsed = ( System.nanoTime() - start );
     System.out.println( "Done sorting the list. Sorting " + bigList.size() + " took: " + TimeUnit.MILLISECONDS.convert( elapsed , TimeUnit.NANOSECONDS ) + " ms ( " + elapsed + " nanos )." );
 
-    System.out.println( "Dump…" );
+    System.out.println( "Dump��" );
 
     for(int b =0; b < bigList.size();b++)
     {
@@ -49,14 +49,10 @@ try {
    
          binarySearch(bigList,0, bigList.size(), 34.2);
          LinearSearch(bigList,34.2);
-
-
 } catch ( IOException ex ) {
     System.out.println( "ERROR - ex: " + ex );
 }
-    
     }
-
    public static void binarySearch(List<GeoReading> array, int lowerbound, int upperbound, Double key)
    {
        int position;

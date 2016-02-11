@@ -3,19 +3,13 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
-
-
-
-
 class GeoReading
 {
-
     BigDecimal localDate = null;
     BigDecimal latitude = null;
     BigDecimal longitude = null;
     BigDecimal depth = null;
     BigDecimal magnitude = null;
-
     public GeoReading( String arg )
     {
         // String is comma-separated values of: Date,Lat,Lon,Depth,Mag
@@ -26,7 +20,6 @@ class GeoReading
         this.depth = new BigDecimal( items.get( 3 ) );
         this.magnitude = new BigDecimal( items.get( 4 ) );
     }
-
     @Override
     public String toString()
     {

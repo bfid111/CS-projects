@@ -3,7 +3,6 @@ import java.util.Comparator;
 
 class GeoReadingAscendingComparator implements Comparator<GeoReading>
 {
-
     @Override
     public int compare( GeoReading o2 , GeoReading o1 )
     {
@@ -24,14 +23,10 @@ class GeoReadingAscendingComparator implements Comparator<GeoReading>
             return depthCompare;
         }
                   */  
-
         int latitudeCompare = o2.latitude.compareTo( o1.latitude );
         if ( latitudeCompare != 0 ) { // If not equal on this component, so compare on this.
             return latitudeCompare;
-        }
-    
-              
+        }     
         return o2.longitude.compareTo( o1.longitude );
-
     }
 }
