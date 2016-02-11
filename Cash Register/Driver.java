@@ -26,7 +26,7 @@ public class Driver implements ActionListener
         double candyprice = 0.50;
         Frame.total = Frame.total-Frame.candycount*candyprice; 
         try{
-        Frame.candycount += Integer.parseInt(JOptionPane.showInputDialog(null, "Quantity")); // inputs quantity 
+        Frame.candycount += Integer.parseInt(JOptionPane.showInputDialog(null, "Enter Quantity")); // inputs quantity 
           }catch(NumberFormatException a){ // catch error 
          System.out.println("ERROR : -- Quantity cannot be NULL!   :" + a +  "-----");
         }
