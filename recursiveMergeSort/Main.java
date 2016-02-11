@@ -11,9 +11,7 @@
 public class Main {
     
     public static void main(String[] args) {
-
-            String b[] =
-                    
+            String b[] = 
                 {"KILO","BRAVO","ALPHA","CHARLIE","ECHO",
                 "ALPHA","KILO","ZULU","BRAVO",
                 "DELTA","ECHO","FOXTROT",
