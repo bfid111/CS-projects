@@ -22,8 +22,4 @@ public class Cipher {
         System.out.println("DECRYPTED TEXT : " + dec);
         
     }
-
-    
-
-   
 }
