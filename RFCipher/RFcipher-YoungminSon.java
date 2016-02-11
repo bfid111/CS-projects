@@ -4,8 +4,6 @@
  * and open the template in the editor.
  */
 
-package realfence;
-
 /**
  *
  * @author Youngmin
@@ -16,9 +14,7 @@ class RFcipher {
     private String str1;
     public RFcipher()
     {
-      
     }
-    
     public RFcipher(String s)
     {
        System.out.println("Initail String: " + s);
@@ -27,17 +23,12 @@ class RFcipher {
        String b = decrypt(a);
        System.out.println("Decrypted :" + b);
     }
- 
-    
-    
-    String encrypt(String str) {
+  String encrypt(String str) {
   int r=strength,len=str.length();
   int c=len/strength;
   char mat[][]=new char[r][c];
   int k=0;
-   
   String cipherText="";
-   
   for(int i=0;i< c;i++)
   {
    for(int j=0;j< r;j++)
@@ -57,16 +48,13 @@ class RFcipher {
   }
   return cipherText;
     }
-
-    String decrypt(String cipherText) {
-         int r=strength,len=cipherText.length();
+  String decrypt(String cipherText) {
+  int r=strength,len=cipherText.length();
   int c=(len/strength);
   char mat[][]=new char[r][c];
   int k=0;
-   
   String plainText="";
-   
-   
+
   for(int i=0;i< r;i++)
   {
    for(int j=0;j< c;j++)
@@ -81,7 +69,6 @@ class RFcipher {
     plainText+=mat[j][i];
    }
   }
-   
   return plainText;
     }
 }
